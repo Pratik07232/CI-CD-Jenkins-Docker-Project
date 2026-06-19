@@ -46,7 +46,7 @@ pipeline {
                     docker stop my-app || true
                     docker rm   my-app || true
                     docker pull ${DOCKER_IMAGE}:latest
-                    docker run -d --name my-app -p 80:3000 ${DOCKER_IMAGE}:latest
+                    docker run -d --name my-app -p 80:5000 ${DOCKER_IMAGE}:latest
                 """
             }
         }

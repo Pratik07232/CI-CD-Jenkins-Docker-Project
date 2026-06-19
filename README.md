@@ -165,7 +165,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 sh "docker stop my-app || true"
-                sh "docker run -d --name my-app -p 80:3000 ${DOCKER_IMAGE}:latest"
+                sh "docker run -d --name my-app -p 80:5000 ${DOCKER_IMAGE}:latest"
             }
         }
     }

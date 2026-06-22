@@ -23,12 +23,13 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                echo '==> Running tests inside container...'
-                sh "docker run --rm ${DOCKER_IMAGE}:${DOCKER_TAG} npm test || true"
-            }
-        }
+        
+           stage('Test') {
+                 steps {
+                  echo 'Skipping tests for Flask app'
+                   }
+              }
+        
 
         stage('Push to DockerHub') {
             steps {

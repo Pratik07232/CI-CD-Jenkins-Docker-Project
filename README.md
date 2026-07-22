@@ -63,7 +63,7 @@ Developer pushes code to GitHub
 **EC2 Setup:**
 ```
 AMI:            Ubuntu 22.04 LTS
-Instance Type:  t2.medium (Jenkins needs 2GB RAM minimum)
+Instance Type:  t3.small (2 vCPU, 2 GiB RAM)
 Security Group: port 22 (SSH), port 8080 (Jenkins)
 ```
 
